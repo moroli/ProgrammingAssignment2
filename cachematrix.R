@@ -3,10 +3,10 @@
 
 
 ## makeCacheMatrix creates a special "Matrix", which is a list containing a function to
-##  1-set the value of the vector
-##  2-get the value of the vector
-##  3-set the value of the mean
-##  4-get the value of the mean
+##  1-set the value of the matrix
+##  2-get the value of the matrix
+##  3-set the inverse of the matrix
+##  4-get the inverse of the matrix
 ## Check, prior to any calculation, if the matrix is invertible
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -43,7 +43,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Calculates the inverse of the matrix created with the above function. 
 ## Checks first to see if the inverse has already been calculated. 
-## If so, it gets the mean from the cache and skips the computation. 
+## If so, it gets the result from the cache and skips the computation. 
 ## Otherwise, it calculates the inverse of the matrix and sets the value 
 ## of the inverse matrix in the cache via the SetMatInv function.
 
